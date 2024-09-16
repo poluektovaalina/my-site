@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Georgia-Regular';
+    src: url('../../assest/fonts/Georgia.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial-Regular';
+    src: url('../../assest/fonts/ArialMT.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-light-xl:#FFFFFF;
+    --color-light-s:#FAFAFA;
+    --color-light-l:#F6F6F6;    
+    --color-dark-s:#CDCDCD;    
+    --color-dark-m:#B2B2B2;    
+    --color-dark-l:#545454;    
+    --color-dark-xl:#4C4C4C;    
+    --color-dark-2xl:#444444;    
+    --color-dark-3xl:#292929;    
+    --start-screen-gradient-background:#211F20;    
+    --footer-gradient-background:#211F20;    
+}
+.wrapper{
+    width: 100%;
+    background-image: url(../../assest/images/jpg/start-screen-background-group.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+.header{
+    background-image: url(../../assest/images/jpg/start-screen-background-group.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.logo-title {
+    font-family: 'Georgia-Regular';
+    font-size: 32px;
+    color: var(--color-primary);
+}
+.logo-subtitle {
+    font-family: 'Arial-Regular';
+    font-size: 13px;
+    color: var(--color-light-xl);
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+.header-menu-list {
+    display: flex;
+    gap: 35px;
+}
+.header-menu-item {
+    list-style-type: none;
+}
+.header-menu-link:hover {
+    color: var(--color-light-s);
+}
+.header-menu-link {
+    text-decoration: none;
+    font-family: 'Arial-Regular';
+    color: var(--color-dark-s);
+    font-size: 15px;
+}
+/* !Header */
+
+.main {
+}
+
+/* Banner */
+.banner {
+    background-image: url(../../assest/images/jpg/start-screen-background-group.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -120px;
+}
+
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    padding-top: 60px;
+}
+.banner-content {
+    width: 49%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.content-heading {
+    font-family: 'Georgia-Regular';
+    font-size: 44px;
+    color: var(--color-light-xl);
+    /* padding-right: 150px; */
+
+}
+.content-subheading {
+    font-family: 'Arial-Regular';
+    font-size: 15px;
+    color: var(--color-dark-s);
+    line-height: 160%;
+    max-width: 460px;
+}
+.content-btn {
+    display: flex;
+}
+.content-btn span{
+    background-color: var(--color-primary);
+    border-radius: 35px;
+    padding: 15px 45px;
+    font-family: 'Georgia-Regular';
+    font-size: 15px;
+    color: var(--color-dark-3xl);
+}
+.banner-pic {
+    width: 49%;
+}
+
+/* !Banner */
+/* About */
+.about {
+    background-color: var(--color-light-xl);
+    padding: 80px 0 100px 0;
+}
+.about-content {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    padding: 0 175px;
+}
+.about-content-pic {
+    width: 30%;
+}
+.about-content-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-desc-heading {
+    font-family: 'Georgia-Regular';
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 6%;
+    color: var(--color-dark-l);
+}
+.about-desc-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 430px;
+}
+.about-desc-subtitle span{
+    font-family: 'Arial-Regular';
+    color: var(--color-dark-xl);
+    line-height: 160%;
+    font-size: 0.938rem;
+}
+
+/* !About */
+/* Pets */
+
+.pets {
+    padding: 80px 0 100px 0;
+    background-color: var(--color-light-l);
+    position: relative;
+}
+.pets .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pets-title span{
+    font-family: 'Georgia-Regular';
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 6%;
+    color: var(--color-dark-l);
+}
+.pets-title {
+    text-align: center;
+}
+.pets-wrapper {
+    padding: 60px 0;
+}
+.pets-container {
+    overflow: hidden;
+    background-color: palegreen;
+}
+.slider-track {
+    display: flex;
+    transition: all .4s ease;
+    gap: 10px;
+
+}
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-s);
+    min-width: 270px;
+    height: max-content;
+    border-radius: 9px 9px 0 0;
+    overflow: hidden;
+}
+.pets-slider-item-img {
+}
+.pets-slider-item-name{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.pets-slider-item-name span{
+    font-family: 'Georgia-Regular';
+    font-size: 1.25rem;
+    line-height: normal;
+    letter-spacing: 6%;
+    color: var(--color-dark-l);
+}
+.pets-slider-item-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.pets-slider-item-btn span {
+    font-family: 'Georgia-Regular';
+    line-height: 130%;
+    letter-spacing: 6%;
+    font-size: 1.063rem;
+    padding: 15px 45px;
+    border-radius: 35px;
+    border: 2px solid var(--color-primary);
+}
+.slider-buttons {
+    position: relative;
+
+}
+.btn-prev,
+.swiper-button-prev {
+    min-width: 52px;
+    min-height: 52px;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    background-image: url("../../assest/icons/Arrow-prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 17% !important;
+    transform: translateY(-50%);
+}
+.swiper-button-prev::after{
+    content: none !important;
+}
+.swiper-button-next::after{
+    content: none !important;
+}
+
+.btn-next,
+.swiper-button-next {
+    min-width: 52px;
+    min-height: 52px;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    background-image: url("../../assest/icons/Arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 17% !important;
+    transform: translateY(-50%);
+}
+.swiper-button-next:hover{
+    background-color: var(--color-primary);
+    transition: all .4s ease;
+}
+.swiper-button-prev:hover{
+    background-color: var(--color-primary);
+    transition: all .4s ease;
+}
+.pets-btn{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.pets-btn span{
+    font-family: 'Georgia-Regular';
+    padding: 15px 45px;
+    color: var(--color-dark-3xl);
+    background-color: var(--color-primary);
+    border-radius: 35px;
+    font-size: 1.063rem;
+
+}
+/* !Pets */
+
+.swiper{
+    padding: 60px 0 !important;
+    max-width: 992px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center;
+}
+.swiper-vertical .swiper-wrapper{
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+}
+.swiper .swiper-wrapper{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 0 0 0 400px;
+}
+.swiper .swiper-wrapper .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-s);
+    min-width: 270px;
+    height: max-content !important;
+    border-radius: 9px;
+    overflow: hidden;
+    flex-shrink: 1;
+    align-items: center;
+    width: 22% !important;
+    margin: 0 !important;
+}
+
+.swiper .swiper-wrapper .swiper-slide .pets-slider-item-name{
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* HELP */
+.help-title{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 60px 0;
+}
+.help-title span{
+    font-family: 'Georgia-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: var(--color-dark-l);
+    letter-spacing: 0.06em;
+    width: 318px;
+    text-align: center;
+}
+
+.help-block{
+    max-width: 1026px;
+    display: flex;
+    gap: 55px 120px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.help-block-item{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.help-block-item .help-name{
+    font-family: 'Georgia-Regular';
+    text-wrap: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--color-dark-l);
+}
+
+/* !HELP */
+/* CONTACTS */
+.contacts{
+    background-color: var(--color-light-l);
+    padding: 80px 0 100px 0;
+}
+.contacts-block{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-content-title span{
+    font-family: 'Georgia-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: var(--color-dark-l);
+    width: 300px;
+    display: inline-block;
+    letter-spacing: 0.06em;
+    padding-bottom: 20px;
+}
+
+.contact-content-desc span{
+    font-family: 'Georgia-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.content-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--color-primary);
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 9px;
+    margin: 20px 0;
+}
+
+.content-card-number span{
+    font-family: 'Georgia-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+.contact-content-ending span{
+    font-family: 'Arial-Regular';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-dark-m);
+    width: 380px;
+    display: inline-block;
+}
+/* !CONTACTS */
