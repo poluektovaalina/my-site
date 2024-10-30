@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url(font/CeraPro-Bold.woff2);
+}
+@font-face {
+  font-family: "CeraProRegular";
+  src: url(font/CeraPro-Regular.woff2);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media screen and (max-width: 760px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.name {
+  font-family: "CeraProRegular";
+  font-size: 16px;
+  color: #3D3D3D;
+}
+
+.header {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #1271ff;
+}
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 0;
+  }
+}
+.header .header-logo {
+  width: 13%;
+}
+.header .header-logo img {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .header .header-logo {
+    display: none;
+  }
+}
+
+.header-menu {
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 700px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+.header-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .header-right {
+    display: none;
+  }
+}
+
+.header-menuSecond {
+  display: none;
+  min-width: 76px;
+  align-items: center;
+  justify-content: center;
+}
+.header-menuSecond img {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .header-menuSecond {
+    display: flex;
+    margin: 15px 0 0 0;
+  }
+}
+
+.search-input {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .search-input {
+    display: flex;
+    height: 45px;
+    background-color: #F8F8F8;
+    padding: 0 20px;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    flex-basis: 80%;
+  }
+  .search-input input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  .search-input input::-moz-placeholder {
+    font-family: "CeraPro";
+    opacity: 0.5;
+  }
+  .search-input input::placeholder {
+    font-family: "CeraPro";
+    opacity: 0.5;
+  }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  margin: 20px 0 0 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.categories {
+  max-width: 310px;
+  background-color: #FBFBFB;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  width: 100%;
+  flex-basis: 50%;
+}
+@media screen and (max-width: 808px) {
+  .categories {
+    display: none;
+  }
+}
+.categories .blok1 h2 {
+  font-family: "CeraPro";
+  color: #3D3D3D;
+  font-size: 18px;
+}
+.categories .blok1 ul {
+  padding: 22px 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.categories .blok1 ul li {
+  list-style-type: none;
+  font-size: 15px;
+  font-family: "CeraProRegular";
+  color: #3D3D3D;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  padding: 46px 0 0 0;
+}
+
+.elements {
+  width: 100%;
+  padding: 0 0 0 50px;
+}
+@media screen and (max-width: 808px) {
+  .elements {
+    padding: 0;
+  }
+}
+
+.elements-blok {
+  display: flex;
+  justify-content: space-between;
+}
+.elements-blok .icon-1 {
+  display: flex;
+  gap: 40px;
+}
+.elements-blok .icon-1 span {
+  padding: 0 0 7px 0;
+}
+.elements-blok .icon-1 span:hover {
+  color: #1271ff;
+  border-bottom: 2px solid #1271ff;
+  cursor: pointer;
+}
+.elements-blok span {
+  font-family: "CeraPro";
+}
+
+.elements-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0 0 0;
+}
+
+.item {
+  max-width: 254px;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-basis: 31%;
+}
+@media screen and (max-width: 1050px) {
+  .item {
+    flex-basis: 46%;
+    max-width: 278px;
+  }
+}
+@media screen and (max-width: 808px) {
+  .item {
+    flex-basis: 30%;
+    max-width: 254px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .item {
+    flex-basis: 46%;
+    max-width: 278px;
+  }
+}
+.item .img {
+  width: 100%;
+}
+.item .img img {
+  width: 100%;
+}
+.item .name {
+  padding: 12px 0 6px 0;
+}
+.item .name span {
+  color: #3D3D3D;
+  font-family: "CeraPro";
+  font-size: 16px;
+}
+.item .price span {
+  font-size: 18px;
+  font-family: "CeraPro";
+  color: #1271ff;
+}
+
+footer {
+  display: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    display: block;
+  }
+}
+footer .button-icon {
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  padding: 0 0 10px 0;
+  gap: 175px;
+}
+@media screen and (max-width: 400px) {
+  footer .button-icon {
+    gap: 145px;
+  }
+}
+footer .button-icon::after {
+  content: " ";
+  background-image: url(img/Vector.png);
+  width: 414px;
+  height: 135px;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+footer .button-icon .icon-2 {
+  position: absolute;
+  top: -20px;
+}
+footer .button-icon .second-group {
+  display: flex;
+  gap: 55px;
+  padding-bottom: 25px;
+}
+@media screen and (max-width: 400px) {
+  footer .button-icon .second-group {
+    gap: 40px;
+  }
+}
+footer .button-icon .first-group {
+  display: flex;
+  gap: 55px;
+  padding-bottom: 25px;
+}
+@media screen and (max-width: 400px) {
+  footer .button-icon .first-group {
+    gap: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
